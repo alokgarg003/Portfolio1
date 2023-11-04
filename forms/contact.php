@@ -27,14 +27,14 @@
 Database name: sql12659291
 Database user: sql12659291
 Database password: ZLJKpKNDsC
-Port number: 3306 */
+Port number: 3306 
   
   $contact->smtp = array(
     'host' => 'sql12659291',
     'username' => 'sql12659291',
     'password' => 'ZLJKpKNDsC',
     'port' => '3306'
-  ); 
+  );  */
   
 
   $contact->add_message( $_POST['name'], 'From');
