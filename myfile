@@ -1,0 +1,384 @@
+<!DOCTYPE html><html><head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Search Salaries. Benchmark Compensation &amp; Careers | 6figr.com</title>
+    <link rel="preconnect" href="https://cdn.6figr.com">
+    <link rel="dns-prefetch" href="https://cdn.6figr.com">
+
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" fetchpriority="high" as="image" href="https://cdn.6figr.com/app/assets/images/logo_cosmic.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Schema.org markup for Google+ -->
+    <!-- <meta itemprop="name" content="6figr - Search Salaries. Find out your Worth.">
+  <meta itemprop="description" content="6figr is a free AI driven career service
+  personalized for employees. Find out your standings in the corporate world.
+  Find out your market worth and compare with others."> -->
+    <meta itemprop="image" content="/assets/images/logo_light_small-radius.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="6figr">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Search Salaries. Benchmark Compensation &amp; Careers">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://6figr.com">
+    <meta property="og:image" content="https://cdn.6figr.com/app/assets/images/previews/previews-min/preview_landing.png">
+    <meta property="og:description" content="6figr is a free AI driven career service
+  personalized for employees. Find out your standings in the corporate world.
+  Find out your market worth and compare with others.">
+    <meta name="google-site-verification" content="9ym9ws1hbMVfh-1AkAtvPU5afCdUzg84eUuJklcrtI8">
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Search Salaries. Benchmark Compensation &amp; Careers">
+    <!-- <meta name="twitter:image" content="https://cdn.6figr.com/app/assets/images/main-banner-preview.png" /> -->
+    <meta name="twitter:description" content="Access premium salaries of professionals like you. Find out your standings in the corporate world.
+  Measure your market worth and compare with others.">
+    <link rel="icon" type="image/png" href="https://cdn.6figr.com/app/assets/images/logo_light_small-radius.png">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"> -->
+    <style>
+        /* Improves performance by storing fonts in user's cache */
+        
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+    </style>
+    <link rel="preload" href="https://cdn.6figr.com/app/assets/fontawesome-pro-5.13.0-web/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.6figr.com/app/assets/fontawesome-pro-5.13.0-web/css/all.min.css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"></noscript>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "6figr",
+            "url": "https://6figr.com",
+            "logo": "https://cdn.6figr.com/app/assets/images/logo_light_big.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Fremont, California, USA",
+                "postalCode": "94555",
+                "streetAddress": "6600 Dumbarton Circle"
+            },
+            "founders": [{
+                "@type": "Person",
+                "name": "Sameer Pallav",
+                "sameAs": [
+                    "https://www.facebook.com/inso.sameer",
+                    "https://in.linkedin.com/in/sameer-pallav-b7624b64",
+                    "https://open.spotify.com/user/sameerpallav",
+                    "https://www.youtube.com/channel/UCls-kIxswwXU8rh5N5ogrGA"
+                ]
+            }, {
+                "@type": "Person",
+                "name": "Vinod Chandrashekar",
+                "sameAs": [
+                    "https://in.linkedin.com/in/vinodchandrashekar",
+                    "https://www.facebook.com/VinCii"
+                ]
+            }, {
+                "@type": "Person",
+                "name": "Yashveer Rana",
+                "sameAs": [
+                    "https://in.linkedin.com/in/yashveer-rana-25499635",
+                    "https://www.facebook.com/captainjackrana"
+                ]
+            }],
+            "sameAs": [
+                "https://kitnadetihai.in",
+                "https://6figr.com",
+                "https://www.facebook.com/6figr",
+                "https://www.linkedin.com/company/6figr"
+            ],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://6figr.com/salary/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+    <script>
+        var global = global || window;
+        var Buffer = Buffer || [];
+        var process = process || {
+            env: {
+                DEBUG: undefined
+            },
+            version: []
+        };
+        var link = document.querySelector("link[rel~='icon']");
+        // if (window.matchMedia &&
+        //   window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        //   link.href = 'https://cdn.6figr.com/app/assets/images/logo_cosmic_big.png'; //dark mode
+        // }
+        // else {
+        //   link.href = 'https://cdn.6figr.com/app/assets/images/logo_light_big.png';//light
+        // }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-51952369-1', 'auto');// add your tracking ID here.
+  </script> -->
+    <!-- End GA snippet -->
+
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NFSRGVT');</script> -->
+    <!-- End Google Tag Manager -->
+
+    <!-- Heap Analytics-->
+    <!-- <script type="text/javascript">
+    window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+    heap.load("4027467338");
+  </script> -->
+    <!-- End Heap snippet -->
+    <!-- Hotjar Tracking Code for https://6figr.com -->
+    <!-- <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 403982, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script> -->
+    <!-- Hotjar Tracking Code for https://6figr.com/ -->
+    <!-- <script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1975709,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+    <!-- Clarity Tracking Code -->
+    <!-- <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "4nb8oweoxa");
+</script> -->
+    <!-- <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ncvbydfh';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</!-->
+    <!-- <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("c8zCuVf38sjZRel8l6rrkQZ4bLVyatOP");
+    analytics.page();
+    }}();
+  </script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51952369-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-51952369-1', { 'optimize_id': 'GTM-T3X3KSP'});
+  </script> -->
+    <!-- <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="9f7beae1-5127-44a0-b0f0-c30926d82465";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script> -->
+    <!-- <script src="https://cdn.teller.io/connect/connect.js" async></script> -->
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      tellerConnect = TellerConnect;
+      
+    });
+  </script> -->
+    <!-- <script type="text/javascript">
+    (function(l,e,a,p) {
+      if (window.Sprig) return;
+      window.Sprig = function(){S._queue.push(arguments)}
+      var S = window.Sprig;S.appId = a;S._queue = [];window.UserLeap=S;
+      a=l.createElement('script');
+      a.async=1;a.src=e+'?id='+S.appId;
+      p=l.getElementsByTagName('script')[0];
+      p.parentNode.insertBefore(a, p);
+    })(document, 'https://cdn.sprig.com/shim.js', '8kSppKmKV');
+  </script> -->
+    <!-- <script>
+    window.addEventListener('load', () => {
+      const giftofspeed = document.createElement('link');
+      giftofspeed.rel = 'stylesheet';
+      giftofspeed.href = '/assets/css/bootstrap.min.css';
+      giftofspeed.type = 'text/css';
+      const godefer = document.getElementsByTagName('link')[0];
+      // godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+      /* Second CSS File */
+      const giftofspeed2 = document.createElement('link');
+      giftofspeed2.rel = 'stylesheet';
+      giftofspeed2.href = '/assets/fontawesome-pro-5.13.0-web/css/all.min.css';
+      giftofspeed2.type = 'text/css';
+      const godefer2 = document.getElementsByTagName('link')[0];
+      godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
+    })
+  </script> -->
+
+<style>@charset "UTF-8";html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html,body{margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}img{border-style:none}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html,body{margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}img{border-style:none}html,body{overscroll-behavior-x:contain}img{vertical-align:middle;border-style:none}body{color:var(--text-basic-color);font-family:var(--text-paragraph-font-family);font-size:var(--text-paragraph-font-size);font-weight:var(--text-paragraph-font-weight);line-height:var(--text-paragraph-line-height)}body{overflow:inherit!important}@media (min-width: 576px){body{overflow-y:scroll!important}}</style><link rel="stylesheet" href="https://cdn.6figr.com/app/styles.649ac7dcd71e0ade.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdn.6figr.com/app/styles.649ac7dcd71e0ade.css"></noscript></head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFSRGVT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+    <ngx-app>
+    </ngx-app>
+    <style>
+        .spinner .splash-logo {
+            width: 160px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                transform: rotate(0)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        
+        @-moz-keyframes spin {
+            0% {
+                -moz-transform: rotate(0)
+            }
+            100% {
+                -moz-transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        
+        .spinner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1003;
+            background: #000000;
+            overflow: hidden
+        }
+        
+        .spinner div:first-child {
+            display: block;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border-radius: 50%;
+            box-shadow: 0 3px 3px 0 rgba(255, 56, 106, 1);
+            transform: translate3d(0, 0, 0);
+            animation: spin 2s linear infinite
+        }
+        
+        .spinner div:first-child:after,
+        .spinner div:first-child:before {
+            content: '';
+            position: absolute;
+            border-radius: 50%
+        }
+        
+        .spinner div:first-child:before {
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            box-shadow: 0 3px 3px 0 rgb(255, 228, 32);
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite
+        }
+        
+        .spinner div:first-child:after {
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            box-shadow: 0 3px 3px 0 rgba(61, 175, 255, 1);
+            animation: spin 1.5s linear infinite
+        }
+    </style>
+    <div id="nb-global-spinner" class="spinner">
+
+        <div class="blob blob-0"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+        <img class="splash-logo" fetchpriority="high" src="https://cdn.6figr.com/app/assets/images/logo_cosmic.png" alt="6figr.com">
+    </div>
+
+<script src="https://cdn.6figr.com/app/runtime.2662f33586174590.js" type="module"></script><script src="https://cdn.6figr.com/app/polyfills.c181876e642c4cb4.js" type="module"></script><script src="https://cdn.6figr.com/app/scripts.f1bf68a9bb31334f.js" defer></script><script src="https://cdn.6figr.com/app/vendor.30c400bcff5ed867.js" type="module"></script><script src="https://cdn.6figr.com/app/main.ab65921df72de644.js" type="module"></script>
+
+
+
+</body><!-- <script type="module">
+  import {onINP} from 'https://unpkg.com/web-vitals@4/dist/web-vitals.attribution.js?module';
+  function sendToGoogleAnalytics({name, delta, value, rating, id, attribution}) {
+    console.log({name, value, rating, delta, id, attribution});
+    const eventParams = {
+      // Built-in params:
+      value: delta, // Use `delta` so the value can be summed.
+      // Custom params:
+      metric_id: id, // Needed to aggregate events.
+      metric_value: value, // Optional.
+      metric_delta: delta, // Optional.
+      metric_rating: rating, // Optional.
+    };
+
+    switch (name) {
+      case 'CLS':
+        eventParams.debug_target = attribution.largestShiftTarget;
+        break;
+      case 'INP':
+        eventParams.debug_target = attribution.interactionTarget;
+        break;
+      case 'LCP':
+        eventParams.debug_target = attribution.element;
+        break;
+    }
+
+    // Assumes the global `gtag()` function exists, see:
+    // https://developers.google.com/analytics/devguides/collection/ga4
+    if(typeof gtag === 'function'){
+      gtag('event', name, eventParams);
+    }
+  }
+  onINP(sendToGoogleAnalytics, {reportAllChanges: true});
+</script> --><!-- <link href="/assets/css/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/bootstrap.min.css"></noscript> --></html>
