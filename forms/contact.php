@@ -1,72 +1,64 @@
 <?php
-// Replace contact@example.com with your real receiving email address
-$receiving_email_address = 'alokgarg003@gmail.com';
 
-// Check if PHP Email Form library file exists
-$php_email_form = 'Portfolio1/forms/contact.php'; // Adjust path as needed
-
-if (file_exists($php_email_form)) {
-    include($php_email_form);
-} else {
-    die('Unable to load the "PHP Email Form" Library!');
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    exit('Method not allowed.');
 }
 
-// Initialize PHP_Email_Form instance
-$contact = new PHP_Email_Form;
-$contact->ajax = true;
+$receiving_email_address = getenv('CONTACT_RECEIVING_EMAIL') ?: 'alokgarg003@gmail.com';
 
-// Set email details
-$contact->to = $receiving_email_address;
-$contact->from_name = $_POST['name'];
-$contact->from_email = $_POST['email'];
-$contact->subject = $_POST['subject'];
+$name = trim($_POST['name'] ?? '');
+$email = trim($_POST['email'] ?? '');
+$subject = trim($_POST['subject'] ?? '');
+$message = trim($_POST['message'] ?? '');
 
-// Add message parts
-$contact->add_message($_POST['name'], 'From');
-$contact->add_message($_POST['email'], 'Email');
-$contact->add_message($_POST['message'], 'Message', 10);
-
-// Send email using PHP Email Form library
-$email_sent = $contact->send();
-
-// Database connection details
-$host = 'localhost'; // MySQL hostname
-$username = 'root'; // MySQL username
-$password = 'alok003'; // MySQL password
-$database = 'resume'; // Replace with your actual database name
-$port = '3036'; // Replace with your actual port
-
-// Create MySQL database connection
-$conn = new mysqli($host, $username, $password, $database, $port);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($name === '' || $email === '' || $subject === '' || $message === '') {
+    http_response_code(400);
+    exit('All fields are required.');
 }
 
-// Prepare SQL statement to insert form data into database
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    exit('Invalid email address.');
+}
 
-$sql = "INSERT INTO messages (name, email, subject, message) VALUES (?, ?, ?, ?)";
-$stmt = $conn->prepare($sql);
+$emailSent = false;
 
-// Bind parameters and execute SQL statement
-$stmt->bind_param("ssss", $name, $email, $subject, $message);
+if (filter_var($receiving_email_address, FILTER_VALIDATE_EMAIL)) {
+    $mailSubject = "Portfolio Contact: " . $subject;
+    $mailBody = "From: {$name}\nEmail: {$email}\n\n{$message}";
+    $headers = "From: {$email}\r\nReply-To: {$email}\r\n";
+    $emailSent = @mail($receiving_email_address, $mailSubject, $mailBody, $headers);
+}
 
-if ($stmt->execute()) {
+$host = getenv('DB_HOST');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD') ?: '';
+$database = getenv('DB_NAME');
+$port = getenv('DB_PORT') ?: '3306';
+
+$dbSaved = false;
+
+if ($host && $username && $database) {
+    $conn = new mysqli($host, $username, $password, $database, (int) $port);
+
+    if (!$conn->connect_error) {
+        $sql = "INSERT INTO messages (name, email, subject, message) VALUES (?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+
+        if ($stmt) {
+            $stmt->bind_param("ssss", $name, $email, $subject, $message);
+            $dbSaved = $stmt->execute();
+            $stmt->close();
+        }
+
+        $conn->close();
+    }
+}
+
+if ($emailSent || $dbSaved) {
     echo "Message submitted successfully.";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    exit;
 }
 
-// Close statement and database connection
-$stmt->close();
-$conn->close();
-
-// Output email sending result (optional, adjust as needed)
-echo $email_sent ? "Email sent successfully." : "Failed to send email.";
-
-?>
+echo "Message received, but no delivery backend is configured.";
